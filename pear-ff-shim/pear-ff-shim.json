@@ -1,0 +1,7 @@
+{
+    "name": "pear-ff-shim",
+    "description": "Shim for communication with the Peard server",
+    "path": "target/debug/pear-ff-shim.exe",
+    "type": "stdio",
+    "allowed_extensions": [ "pear@doomishfox.net" ]
+}
