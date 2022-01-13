@@ -1,7 +1,9 @@
+console.log("starting pear...");
+
 /*
 On startup, connect to the "ping_pong" app.
 */
-var port = browser.runtime.connectNative("pear-ff-shim");
+var port = browser.runtime.connectNative("pear_ff_shim");
 
 /*
 Listen for messages from the app.
@@ -14,6 +16,6 @@ port.onMessage.addListener((response) => {
 On a click on the browser action, send the app a message.
 */
 browser.browserAction.onClicked.addListener(() => {
-  console.log("Sending:  ping");
-  port.postMessage("ping");
+  console.log("Sending: echo");
+  port.postMessage("echotest");
 });

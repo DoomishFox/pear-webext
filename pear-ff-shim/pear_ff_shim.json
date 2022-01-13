@@ -1,7 +1,7 @@
 {
-    "name": "pear-ff-shim",
+    "name": "pear_ff_shim",
     "description": "Shim for communication with the Peard server",
-    "path": "target/debug/pear-ff-shim.exe",
+    "path": "C:\\home\\Workspace\\FoxCode\\pear-webext\\pear-ff-shim\\target\\debug\\pear-ff-shim.exe",
     "type": "stdio",
     "allowed_extensions": [ "pear@doomishfox.net" ]
 }

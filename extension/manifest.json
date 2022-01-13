@@ -19,7 +19,7 @@
     },
 
     "browser_action": {
-        "default_icon": "icons/message.svg"
+        "default_icon": "icons/pear.svg"
     },
 
     "permissions": ["nativeMessaging"]
