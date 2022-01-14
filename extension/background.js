@@ -18,6 +18,6 @@ On a click on the browser action, send the app a message.
 */
 browser.browserAction.onClicked.addListener(() => {
   console.log("Sending: echo");
-  let packet = { action: 10, payload: {} }
+  let packet = { action: 1, payload: {} }
   port.postMessage(packet);
 });
