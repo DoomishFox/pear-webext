@@ -10,6 +10,7 @@ Listen for messages from the app.
 */
 port.onMessage.addListener((response) => {
   console.log("Received: " + response);
+  console.log(response);
 });
 
 /*
@@ -17,5 +18,6 @@ On a click on the browser action, send the app a message.
 */
 browser.browserAction.onClicked.addListener(() => {
   console.log("Sending: echo");
-  port.postMessage("echotest");
+  let packet = { action: 10, payload: {} }
+  port.postMessage(JSON.stringify(packet));
 });
