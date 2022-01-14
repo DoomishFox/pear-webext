@@ -19,5 +19,5 @@ On a click on the browser action, send the app a message.
 browser.browserAction.onClicked.addListener(() => {
   console.log("Sending: echo");
   let packet = { action: 10, payload: {} }
-  port.postMessage(JSON.stringify(packet));
+  port.postMessage(packet);
 });
